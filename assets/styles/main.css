@@ -54,7 +54,7 @@ header h1 {
 .plx-bg {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 #aquathlon .banner {
