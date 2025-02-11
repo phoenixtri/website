@@ -33,6 +33,11 @@ nav ul li {
     margin-right: 10px;
 }
 
+nav #menu {
+    position: absolute;
+    right: 0px;
+}
+
 header {
     background-image: url("../images/Track-smiles-1300x529-1.jpg");
     background-repeat: no-repeat;
