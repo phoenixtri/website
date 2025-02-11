@@ -29,7 +29,7 @@ nav ul li {
 }
 
 header {
-    background-image: url("../../images/Track-smiles-1300x529-1.jpg");
+    background-image: url("../images/Track-smiles-1300x529-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px
@@ -50,7 +50,7 @@ header h1 {
 }
 
 #aquathlon .banner {
-    background-image: url("../../images/phoenix-aquathlon-cover-image-2019.jpg");
+    background-image: url("../images/phoenix-aquathlon-cover-image-2019.jpg");
 }
 
 #aquathlon .banner .spacer {
@@ -58,11 +58,11 @@ header h1 {
 }
 
 #training .banner {
-    background-image: url("../../images/training-hero.jpg")
+    background-image: url("../images/training-hero.jpg")
 }
 
 #membership .banner {
-    background-image: url("../../images/membership-hero.jpg");
+    background-image: url("../images/membership-hero.jpg");
 }
 
 .pt-red {
