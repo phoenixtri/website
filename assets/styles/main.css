@@ -41,9 +41,6 @@ nav #menu {
 
 header {
     background-image: url("../images/Track-smiles-1300x529-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px
 }
 
 header .spacer {
@@ -55,9 +52,9 @@ header h1 {
 }
 
 .plx-bg {
-    background-size: 120%;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    background-repeat: repeat-y;
 }
 
 #aquathlon .banner {
@@ -74,6 +71,30 @@ header h1 {
 
 #membership .banner {
     background-image: url("../images/membership-hero.jpg");
+}
+
+#team ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.team-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .pt-red {
@@ -110,4 +131,38 @@ header h1 {
     width: 50%;
     padding-top: 50%; /* 1:1 Aspect Ratio */
     position: relative; /* If you want text inside of it */
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    nav #logo {
+        content: url("../images/phoenixtri-icon.svg");
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav #logo {
+        content: url("../images/phoenixtri-logo.svg");
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav #menu {
+        position: relative;
+    }
+
+    nav ul {
+        text-align: center;
+        display: block;
+        padding: 0
+    }
+
+    #team ul {
+        padding-left: 50px;
+    }
 }
