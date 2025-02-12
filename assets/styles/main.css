@@ -201,6 +201,10 @@ header #socialmedia img {
     }
 }
 
+#emails div {
+    text-align: center;
+}
+
 .btn-red {
     border: 2px solid red;
     background-color: #ef2f24;
