@@ -156,7 +156,7 @@ header #socialmedia img {
 }
 
 .light-bg {
-    color: white
+    background-color: #CCCCCC
 }
 
 .red-bg {
@@ -207,6 +207,7 @@ header #socialmedia img {
     color: white;
     padding: 10px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .btn-black {
@@ -215,6 +216,7 @@ header #socialmedia img {
     color: white;
     padding: 10px;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .center-content {
@@ -246,7 +248,7 @@ header #socialmedia img {
 }
 
 .stagger div:nth-child(even) {
-    background-color: #ef2f24;
+    background-color: #ac1a12;
     color: white;
 }
 
