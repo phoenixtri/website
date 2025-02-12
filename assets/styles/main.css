@@ -278,6 +278,10 @@ header #socialmedia img {
         min-height: 200px;
     }
 
+    nav div {
+        text-align: center;
+    }
+
     nav #logo {
         content: url("../images/phoenixtri-logo.svg");
     }
