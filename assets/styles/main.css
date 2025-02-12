@@ -1,14 +1,23 @@
 body {
+    display: flex;
+    justify-content: center;
     margin: 0px;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+    background-color: gray;
+}
+
+body>div{
+    position: relative;
+    width: 1200px;
+    background-color: white;
 }
 
 a {
-    color: black;
+    color: #ef2f24;
     font-weight: bold;
     text-decoration: none;
 }
@@ -39,6 +48,10 @@ nav #menu {
     right: 0px;
 }
 
+nav #menu a {
+    color: black
+}
+
 header {
     background-image: url("../images/Track-smiles-1300x529-1.jpg");
 }
@@ -51,10 +64,35 @@ header h1 {
     font-size: 3em;
 }
 
+header #socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+header #socialmedia a {
+    margin: 10px;
+}
+
+header #socialmedia img {
+    width: 80px;
+}
+
+.box p, .box h1, .box h2, .box h3 {
+    text-align: center;
+}
+
 .plx-bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+
+.opaque {
+    opacity: 1;
+}
+
+.translucent {
+    opacity: 0.8;
 }
 
 #aquathlon .banner {
@@ -97,6 +135,14 @@ header h1 {
     object-position: top;
 }
 
+.benefits {
+    list-style: none;
+}
+
+.benefits li::before {
+    content: '➤ ';
+}
+
 .pt-red {
     color: #ef2f24
 }
@@ -126,6 +172,18 @@ header h1 {
     padding: 5px;
 }
 
+.bordered {
+    border: 1px solid rgba(239, 47, 36, 1);
+}
+
+.floating {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
 .square {
     border: 1px solid black;
     width: 50%;
@@ -141,6 +199,66 @@ header h1 {
     nav #logo {
         content: url("../images/phoenixtri-icon.svg");
     }
+}
+
+.btn-red {
+    border: 2px solid red;
+    background-color: #ef2f24;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-black {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
+.stagger {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0fr;
+    margin: 10px;
+}
+
+.stagger div {
+    position: relative;
+    margin: 10px;
+}
+
+.stagger img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    overflow: hidden;
+}
+
+.stagger article {
+    padding: 20px
+}
+
+.stagger div:nth-child(even) {
+    background-color: #ef2f24;
+    color: white;
+}
+
+.stagger div:nth-child(odd) {
+    background-color: #231f20;
+    color: white;
+}
+
+.back-to-top,
+.back-to-top a {
+    text-align: center;
+    color: #ccc
 }
 
 @media only screen and (max-width: 600px) {
@@ -165,4 +283,11 @@ header h1 {
     #team ul {
         padding-left: 50px;
     }
+
+    .stagger {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
 }
