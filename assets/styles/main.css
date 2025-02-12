@@ -264,6 +264,20 @@ header #socialmedia img {
 }
 
 @media only screen and (max-width: 600px) {
+    body>div{
+        position: relative;
+        width: 100%;
+        background-color: white;
+    }
+
+    .box {
+        margin: 10px;
+    }
+
+    .stagger div:has(a>img) {
+        min-height: 200px;
+    }
+
     nav #logo {
         content: url("../images/phoenixtri-logo.svg");
     }
