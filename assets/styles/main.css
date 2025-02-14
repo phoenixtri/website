@@ -77,7 +77,7 @@ header #socialmedia img {
     width: 80px;
 }
 
-.box p, .box h1, .box h2, .box h3 {
+.box p, .box h1, .box h2, .box h3, .box h4, .box h5 {
     text-align: center;
 }
 
@@ -118,6 +118,7 @@ header #socialmedia img {
     gap: 50px;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 .team-photo {
@@ -189,6 +190,42 @@ header #socialmedia img {
     width: 50%;
     padding-top: 50%; /* 1:1 Aspect Ratio */
     position: relative; /* If you want text inside of it */
+}
+
+.trainingschedule {
+    padding: 0px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.trainingschedule h5 {
+    color: #ef2f24;
+}
+
+.trainingschedule>div {
+    border: 5px solid grey;
+}
+
+.restday {
+    background-color: lightyellow;
+}
+
+.fitness {
+    background-color: lightsalmon;
+}
+
+.swim {
+    background: lightblue;
+}
+
+.bike {
+    background-color: lightgreen;
+}
+
+.run {
+    background-color: lightpink
 }
 
 #menu-toggle {
