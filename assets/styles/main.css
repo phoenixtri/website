@@ -351,4 +351,12 @@ header #socialmedia img {
         margin: 10px;
     }
 
+    .trainingschedule {
+        padding: 0px 50px 50px 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
 }
