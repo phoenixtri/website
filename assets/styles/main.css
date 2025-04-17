@@ -64,17 +64,18 @@ header h1 {
     font-size: 3em;
 }
 
-header #socialmedia {
+#socialmedia #icons {
     display: flex;
     justify-content: center;
 }
 
-header #socialmedia a {
+#socialmedia #icons a {
     margin: 10px;
 }
 
-header #socialmedia img {
+#socialmedia #icons img {
     width: 80px;
+    height: 80px
 }
 
 .box p, .box h1, .box h2, .box h3, .box h4, .box h5 {
@@ -271,16 +272,15 @@ header #socialmedia img {
     margin: 10px;
 }
 
-.stagger div {
+.stagger>div {
     position: relative;
     margin: 10px;
 }
 
-.stagger img {
+.stagger>div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
     overflow: hidden;
 }
 
@@ -288,12 +288,12 @@ header #socialmedia img {
     padding: 20px
 }
 
-.stagger div:nth-child(even) {
+.stagger>div:nth-child(even) {
     background-color: #ac1a12;
     color: white;
 }
 
-.stagger div:nth-child(odd) {
+.stagger>div:nth-child(odd) {
     background-color: #231f20;
     color: white;
 }

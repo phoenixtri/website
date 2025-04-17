@@ -34,7 +34,7 @@
         <div class="box light-fg dark-bg center-content">
             <h1>Guildford's Triathlon Club</h1>
         </div>
-        <div class="box light-fg dark-bg">
+        <div class="box light-fg dark-bg" style="padding: 20px">
             <div>
                 <p>
                     Phoenix Triathlon Club is a friendly club based in Guildford, Surrey. We have over 130 members of all abilities from beginners to experienced athletes and offers a fun and varied training programme all year round.
@@ -44,20 +44,36 @@
                     <a class="btn-black" href="#membership">Membership Prices</a>
                 </div>
             </div>
-            <div>
-                <p>
-                    Come and join us on social media for all the latest Phoenix Tri updates.
-                </p>
-                <div id="socialmedia">
-                    <a href="https://www.facebook.com/PhoenixTriathlonGuildford"><img src="./assets/images/2021_Facebook_icon.svg" alt="Facebook"/></a>
-                    <a href="https://www.instagram.com/phoenixtri_club"><img src="./assets/images/Instagram_logo_2016.svg" alt="Instagram"/></a>
-                    <!--<a href="https://phoenixtrisurreyuk.teamapp.com"><img style="border-radius: 20px;" src="./assets/images/teamapp.png" alt="TeamApp"/></a>-->
-                </div>
-            </div>
         </div>
         <div>&nbsp;</div>
     </header>
     <main>
+        <section id="socialmedia">
+            <div class="stagger">
+                <div>
+                    <article>
+                    <h3>
+                        Come and join us on social media for all the latest Phoenix Tri updates.
+                    </h3>
+                    <ul>
+                        <li>See what our athletes are up to</li>
+                        <li>Find out about our events</li>
+                        <li>Discover training tips</li>
+                        <li>Get in touch</li>
+                    </ul>
+                    <span id="icons">
+                        <a href="https://www.facebook.com/PhoenixTriathlonGuildford"><img src="./assets/images/2021_Facebook_icon.svg" alt="Facebook"/></a>
+                        <a href="https://www.instagram.com/phoenixtri_club"><img src="./assets/images/Instagram_logo_2016.svg" alt="Instagram"/></a>
+                        <!--<a href="https://phoenixtrisurreyuk.teamapp.com"><img style="border-radius: 20px;" src="./assets/images/teamapp.png" alt="TeamApp"/></a>-->
+                    </span>
+                    </article>
+                </div>
+                <div id="feed" style="display:flex; justify-content:center;padding:20px">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPhoenixTriathlonGuildford&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </div>
+                <div><!--deliberately empty--></div>
+            </div>
+        </section>
         <section>
             <div class="back-to-top"><a href="#top">⌅</a></div>
         </section>
