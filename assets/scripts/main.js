@@ -59,3 +59,10 @@
 // document.addEventListener("DOMContentLoaded", () => {
 //     parralax();
 // });
+
+switch (window.location.pathname) {
+    case '/aquathlon':
+        window.location.hash = 'aquathlon';
+    default
+        break;
+}
