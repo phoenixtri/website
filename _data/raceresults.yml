@@ -1,0 +1,12 @@
+# Race results for current year
+# Edit this file to add new race results
+
+year: 2025
+
+results:
+  - name: "Race 1 - Friday 27th June 2025"
+    url: "http://www.raceclocker.com/c5e99f94"
+  - name: "Race 2 - Friday 11th July 2025"
+    url: "https://raceclocker.com/ddfcfd82"
+  - name: "Race 3 - Friday 8th August 2025"
+    url: "https://raceclocker.com/ff3ed45d"

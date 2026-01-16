@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aquathlon 2025: Medical Declaration | PhoenixTri</title>
-    <meta http-equiv="refresh" content="3; url=https://forms.gle/6QAwqv6nRy4CTtTz6">
+    <title>{{ page.title }} | PhoenixTri</title>
+    <meta http-equiv="refresh" content="{{ page.redirect_delay | default: 3 }}; url={{ page.redirect_url }}">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/images/phoenixtri-icon.svg">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/phoenixtri-icon.svg' | relative_url }}">
     
     <style>
         :root {
@@ -107,13 +107,13 @@
 </head>
 <body>
     <div class="container">
-        <img src="../assets/images/phoenixtri-logo.svg" alt="Phoenix Tri Logo" class="logo" />
-        <h1>Medical Declaration</h1>
+        <img src="{{ '/assets/images/phoenixtri-logo.svg' | relative_url }}" alt="Phoenix Tri Logo" class="logo" />
+        <h1>{{ page.heading | default: page.title }}</h1>
         <div class="loader"></div>
-        <p>Redirecting you to the medical declaration form...</p>
+        <p>{{ page.message | default: "Redirecting you..." }}</p>
         <p>If you are not redirected automatically, please click the button below:</p>
-        <a href="https://forms.gle/6QAwqv6nRy4CTtTz6" class="btn">
-            Open Medical Form
+        <a href="{{ page.redirect_url }}" class="btn">
+            {{ page.button_text | default: "Continue" }}
         </a>
     </div>
 </body>

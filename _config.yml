@@ -1,0 +1,57 @@
+# Phoenix Triathlon Club Website
+# Jekyll configuration
+
+title: PhoenixTri | Guildford's Triathlon Club
+description: Phoenix Triathlon Club - Guildford's friendly triathlon club for all abilities.
+url: "https://phoenixtri.co.uk"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Permalink style
+permalink: pretty
+
+# Include pages from _pages directory
+include:
+  - _pages
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "subpage"
+  - scope:
+      path: "index.html"
+    values:
+      layout: "default"
+  - scope:
+      path: "404.html"
+    values:
+      layout: "error"
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .ai
+  - serve.sh
+  - ruby32_compat_preload.rb
+  - vendor/

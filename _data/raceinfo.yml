@@ -1,0 +1,46 @@
+# Race information data
+# Edit this file to update race day timings and route information
+
+venue: "Guildford Lido, Stoke Road, Guildford, GU1 1HB"
+
+timings:
+  - time: "18:15"
+    activity: "Registration opens"
+  - time: "18:35"
+    activity: "Transition access opens"
+  - time: "19:00"
+    activity: "Registration closes / Transition access closes / Race briefing"
+  - time: "19:10"
+    activity: "Children races start (Tristar Start first)"
+  - time: "19:30 (approx.)"
+    activity: "Youth & Junior / Adult race starts"
+  - time: "19:45 (approx.)"
+    activity: "Tristar categories Prize Giving"
+  - time: "20:30 (approx.)"
+    activity: "Youth & Adult Prize Giving"
+
+routes:
+  - category: "TriStar Start"
+    swim: "50m"
+    lengths: 1
+    run: "600m"
+  - category: "TriStar 1"
+    swim: "150m"
+    lengths: 3
+    run: "1.5km"
+  - category: "TriStar 2"
+    swim: "200m"
+    lengths: 4
+    run: "2km"
+  - category: "TriStar 3"
+    swim: "300m"
+    lengths: 6
+    run: "3km"
+  - category: "Youth & Junior"
+    swim: "500m"
+    lengths: 10
+    run: "5km"
+  - category: "Adults"
+    swim: "500m"
+    lengths: 10
+    run: "5km"

@@ -1,0 +1,20 @@
+# Aquathlon sponsors
+# Edit this file to update sponsor logos and links
+# Logos should be placed in assets/images/
+
+sponsors:
+  - name: "Stolen Goat"
+    logo: "stolengoat_logo.png"
+    url: ""
+  - name: "Feel Fit With Lucy"
+    logo: "feelfitwithlucy_logo.png"
+    url: ""
+  - name: "Guildford Lido"
+    logo: "guildfordlido_logo.png"
+    url: ""
+  - name: "Fitstuff"
+    logo: "fitstuff_logo.png"
+    url: ""
+  - name: "Kelly's Storage"
+    logo: "kellysstorage_logo.png"
+    url: ""

@@ -1,0 +1,15 @@
+# Contact information
+# Edit this file to update contact email addresses
+
+contacts:
+  - title: "General Enquiries"
+    email: "info@phoenixtri.co.uk"
+  - title: "Aquathlon Series"
+    email: "aquathlon@phoenixtri.co.uk"
+  - title: "Membership"
+    email: "membership@phoenixtri.co.uk"
+
+# Social media links
+social:
+  facebook: "https://www.facebook.com/PhoenixTriathlonGuildford"
+  instagram: "https://www.instagram.com/phoenixtri_club"

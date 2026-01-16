@@ -1,0 +1,63 @@
+# Race dates and information
+# Edit this file to update race dates and entry links
+
+# Current year races
+year: 2025
+
+upcoming:
+  - date: "June 13"
+    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28june%29_16384"
+  - date: "July 11"
+    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28july%29_16473"
+  - date: "August 8"
+    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28aug%29_16474"
+
+# Race distances by category
+distances:
+  - category: "Tristar Start (8 yrs)"
+    swim: "50m"
+    run: "600m"
+  - category: "Tristar 1 (9-10yrs)"
+    swim: "150m"
+    run: "1.5km"
+  - category: "Tristar 2 (11-12yrs)"
+    swim: "200m"
+    run: "2km"
+  - category: "Tristar 3 (13-14yrs)"
+    swim: "300m"
+    run: "3km"
+  - category: "Youth/Junior (15-19yrs)"
+    swim: "500m"
+    run: "5km"
+  - category: "Adults (20yrs+)"
+    swim: "500m"
+    run: "5km"
+
+# Past results by year
+past_results:
+  - year: 2023
+    races:
+      - name: "Race 1"
+        url: "https://raceclocker.com/a62b27a6"
+      - name: "Race 2"
+        url: "https://raceclocker.com/6bd173"
+      - name: "Race 3"
+        url: "https://raceclocker.com/c84e7f50"
+  - year: 2022
+    races:
+      - name: "Race 1"
+        url: "https://www.racetecresults.com/results.aspx?CId=16665&RId=3328"
+      - name: "Race 2"
+        url: "https://www.racetecresults.com/results.aspx?CId=16665&RId=3339&EId=1"
+      - name: "Race 3"
+        url: "https://www.racetecresults.com/results.aspx?CId=16665&RId=12022"
+      - name: "Race 4"
+        url: "https://www.racetecresults.com/results.aspx?CId=16665&RId=3355"
+  - year: 2021
+    races:
+      - name: "Race 1"
+        url: "https://www.racetecresults.com/results.aspx?CId=16665&RId=3247&EId=1"
+      - name: "Race 2"
+        url: "https://www.racetecresults.com/results.aspx?CId=16665&RId=3258&EId=1"
+      - name: "Race 3"
+        url: "https://www.racetecresults.com/results.aspx?CId=16665&RId=3266"
