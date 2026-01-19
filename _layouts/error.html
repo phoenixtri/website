@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }} | PhoenixTri</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/phoenixtri-icon.svg' | relative_url }}">
+    
+    <style>
+        :root {
+            --phoenix-red: #ef2f24;
+            --phoenix-red-dark: #c41e14;
+            --phoenix-black: #231f20;
+            --phoenix-dark: #0a0809;
+            --white: #ffffff;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: linear-gradient(135deg, var(--phoenix-dark) 0%, var(--phoenix-black) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 80%, rgba(239, 47, 36, 0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(239, 47, 36, 0.2) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .logo {
+            width: 200px;
+            margin-bottom: 2rem;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        .error-code {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(6rem, 20vw, 12rem);
+            font-weight: 700;
+            color: var(--phoenix-red);
+            line-height: 1;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 60px rgba(239, 47, 36, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 40px rgba(239, 47, 36, 0.3); }
+            to { text-shadow: 0 0 80px rgba(239, 47, 36, 0.6); }
+        }
+        
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            font-size: 1.1rem;
+            color: #999;
+            margin-bottom: 2rem;
+            max-width: 400px;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            background: var(--phoenix-red);
+            color: var(--white);
+            border: 2px solid var(--phoenix-red);
+            box-shadow: 0 4px 20px rgba(239, 47, 36, 0.4);
+        }
+        
+        .btn:hover {
+            background: var(--phoenix-red-dark);
+            border-color: var(--phoenix-red-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(239, 47, 36, 0.5);
+        }
+        
+        .btn::before {
+            content: '←';
+            font-size: 1.2rem;
+        }
+        
+        /* Floating particles effect */
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: var(--phoenix-red);
+            border-radius: 50%;
+            opacity: 0.2;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
+        .particle:nth-child(2) { left: 20%; top: 80%; animation-delay: 1s; }
+        .particle:nth-child(3) { left: 60%; top: 10%; animation-delay: 2s; }
+        .particle:nth-child(4) { left: 80%; top: 60%; animation-delay: 3s; }
+        .particle:nth-child(5) { left: 40%; top: 90%; animation-delay: 4s; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) scale(1); opacity: 0.2; }
+            50% { transform: translateY(-30px) scale(1.2); opacity: 0.4; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating particles -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    
+    <div class="container">
+        <img class="logo" src="{{ '/assets/images/phoenixtri-logo.svg' | relative_url }}" alt="Phoenix Tri Logo">
+        {{ content }}
+    </div>
+</body>
+</html>

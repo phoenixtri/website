@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aquathlon 2025: Race Results | PhoenixTri</title>
+    <title>{{ page.title }} | PhoenixTri</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="../assets/images/phoenixtri-icon.svg">
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/phoenixtri-icon.svg' | relative_url }}">
     
     <style>
         :root {
@@ -149,31 +149,21 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="../assets/images/phoenixtri-logo.svg" alt="Phoenix Tri Logo" />
+            <img src="{{ '/assets/images/phoenixtri-logo.svg' | relative_url }}" alt="Phoenix Tri Logo" />
         </div>
         <div class="content">
-            <h2>Aquathlon 2025 Results</h2>
+            <h2>Aquathlon {{ site.data.raceresults.year }} Results</h2>
             <ul class="results-list">
+                {% for result in site.data.raceresults.results %}
                 <li>
-                    <a href="http://www.raceclocker.com/c5e99f94">
-                        Race 1 - Friday 27th June 2025
+                    <a href="{{ result.url }}">
+                        {{ result.name }}
                         <span>View Results →</span>
                     </a>
                 </li>
-                <li>
-                    <a href="https://raceclocker.com/ddfcfd82">
-                        Race 2 - Friday 11th July 2025
-                        <span>View Results →</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://raceclocker.com/ff3ed45d">
-                        Race 3 - Friday 8th August 2025
-                        <span>View Results →</span>
-                    </a>
-                </li>
+                {% endfor %}
             </ul>
-            <a href="../" class="back-link">← Back to Home</a>
+            <a href="{{ '/' | relative_url }}" class="back-link">← Back to Home</a>
         </div>
     </div>
 </body>

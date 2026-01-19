@@ -1,0 +1,21 @@
+# Membership pricing
+# Edit this file to update membership prices and descriptions
+
+memberships:
+  - name: "Social Membership"
+    price: 45
+    period: "per year"
+    description: "Attend uncoached Saturday rides and social events arranged by the club"
+    featured: false
+
+  - name: "Triathlon Membership"
+    price: 405
+    period: "per year"
+    description: "Attend all training sessions and social events arranged by the club - best value!"
+    featured: true
+
+  - name: "Duathlon Membership"
+    price: 205
+    period: "per year"
+    description: "Attend all run and bike sessions and social events arranged by the club"
+    featured: false

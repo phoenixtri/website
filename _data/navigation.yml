@@ -1,0 +1,14 @@
+# Main navigation menu
+# Edit this file to change the navigation links
+
+main:
+  - title: Aquathlon
+    url: "#aquathlon"
+  - title: Training
+    url: "#training"
+  - title: Membership
+    url: "#membership"
+  - title: Coaches
+    url: "#coaches"
+  - title: Contact
+    url: "#contact"

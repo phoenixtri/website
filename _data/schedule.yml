@@ -1,0 +1,44 @@
+# Weekly training schedule
+# Edit this file to update training times and locations
+# Types: rest, run, swim, bike, fitness
+
+days:
+  - day: "Sunday"
+    type: "rest"
+    activity: "Rest Day"
+    details: "Member-led activities often available"
+  
+  - day: "Monday"
+    type: "fitness"
+    activity: "Strength & Conditioning"
+    location: "Online Session"
+  
+  - day: "Tuesday"
+    type: "run"
+    activity: "Running"
+    details: "Track Session"
+    location: "Guildford Spectrum"
+  
+  - day: "Wednesday"
+    type: "swim"
+    activity: "Swimming"
+    details: "50m Pool"
+    location: "Surrey Sports Park"
+  
+  - day: "Thursday"
+    type: "bike"
+    activity: "Cycle"
+    details: "Spinning"
+    location: "Guildford Spectrum"
+  
+  - day: "Friday"
+    type: "swim"
+    activity: "Swimming"
+    details: "25m Pool"
+    location: "Guildford Spectrum"
+  
+  - day: "Saturday"
+    type: "bike"
+    activity: "Club Ride"
+    details: "Social Cycle"
+    location: "Snooty Fox Café"

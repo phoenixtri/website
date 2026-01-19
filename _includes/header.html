@@ -1,0 +1,26 @@
+<!-- JavaScript Disabled Notice -->
+<noscript>
+    <div class="js-notice">
+        ⚠️ JavaScript is disabled. The site will work but some interactive features and animations are unavailable.
+    </div>
+</noscript>
+
+<div class="site-wrapper">
+    <!-- Top Accent Bar -->
+    <div id="top"></div>
+    
+    <!-- Navigation -->
+    <nav>
+        <div>
+            <a href="{{ '/' | relative_url }}#top">
+                <img id="logo" src="{{ '/assets/images/phoenixtri-logo.svg' | relative_url }}" alt="Phoenix Tri Logo"/>
+            </a>
+        </div>
+        <div id="menu">
+            <ul>
+                {% for item in site.data.navigation.main %}
+                <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>

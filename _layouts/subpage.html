@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }} | PhoenixTri</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/phoenixtri-icon.svg' | relative_url }}">
+    
+    <style>
+        :root {
+            --phoenix-red: #ef2f24;
+            --phoenix-red-dark: #c41e14;
+            --phoenix-black: #231f20;
+            --phoenix-dark: #0a0809;
+            --white: #ffffff;
+            --gray-100: #f5f5f5;
+            --gray-300: #cccccc;
+            --gray-800: #333333;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.7;
+            color: var(--phoenix-black);
+            background: var(--gray-100);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .page-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-bar {
+            background: linear-gradient(135deg, var(--phoenix-dark) 0%, var(--phoenix-black) 100%);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header-bar::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--phoenix-red);
+        }
+        
+        .header-bar img {
+            max-width: 250px;
+            height: auto;
+        }
+        
+        .back-link {
+            position: absolute;
+            left: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color 0.3s;
+        }
+        
+        .back-link:hover {
+            color: var(--phoenix-red);
+        }
+        
+        .content {
+            padding: 3rem;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+        
+        h1 {
+            color: var(--phoenix-black);
+            font-size: 2rem;
+            margin: 0 0 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--phoenix-red);
+        }
+        
+        h2 {
+            color: var(--phoenix-red);
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        h3 {
+            color: var(--phoenix-black);
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        
+        p {
+            margin: 0 0 1rem;
+        }
+        
+        a {
+            color: var(--phoenix-red);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        
+        a:hover {
+            color: var(--phoenix-red-dark);
+            text-decoration: underline;
+        }
+        
+        strong {
+            color: var(--phoenix-black);
+        }
+        
+        .alert {
+            background: linear-gradient(135deg, var(--phoenix-red) 0%, var(--phoenix-red-dark) 100%);
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .alert strong {
+            color: var(--white);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--gray-100);
+        }
+        
+        th {
+            background: var(--phoenix-black);
+            color: var(--white);
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        tr:nth-child(even) {
+            background: var(--gray-100);
+        }
+        
+        tr:hover {
+            background: rgba(239, 47, 36, 0.05);
+        }
+        
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        ul li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--phoenix-red);
+            font-weight: bold;
+        }
+        
+        blockquote {
+            margin: 0;
+        }
+        
+        .info-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 1.5rem 0;
+        }
+        
+        .sponsors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid var(--gray-300);
+        }
+        
+        .sponsors img {
+            max-width: 150px;
+            max-height: 100px;
+            object-fit: contain;
+            filter: grayscale(20%);
+            transition: filter 0.3s, transform 0.3s;
+        }
+        
+        .sponsors img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            background: var(--phoenix-black);
+            color: var(--gray-300);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 1.5rem;
+            }
+            
+            .back-link {
+                position: static;
+                transform: none;
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+            
+            .header-bar {
+                padding: 1.5rem;
+            }
+            
+            table {
+                font-size: 0.9rem;
+            }
+            
+            th, td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="header-bar">
+            <a href="{{ '/' | relative_url }}" class="back-link">← Back to Home</a>
+            <img src="{{ '/assets/images/phoenixtri-logo.svg' | relative_url }}" alt="Phoenix Tri Logo" />
+        </div>
+        
+        <div class="content">
+            {{ content }}
+        </div>
+        
+        <div class="footer">
+            <p>&copy; {{ site.time | date: '%Y' }} Phoenix Triathlon Club, Guildford. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

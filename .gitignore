@@ -1,1 +1,22 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Jekyll build
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Archives
 repo.zip
+
+# AI workspace files
+.ai
+
+# Local development only (not needed for GitHub Pages)
+serve.sh
+ruby32_compat_preload.rb
