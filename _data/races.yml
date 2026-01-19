@@ -2,14 +2,14 @@
 # Edit this file to update race dates and entry links
 
 # Current year races
-year: 2025
+year: 2026
 
 upcoming:
-  - date: "June 13"
+  - date: "TBD"
     entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28june%29_16384"
-  - date: "July 11"
+  - date: "TBD"
     entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28july%29_16473"
-  - date: "August 8"
+  - date: "TBD"
     entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28aug%29_16474"
 
 # Race distances by category
