@@ -5,12 +5,12 @@
 year: 2026
 
 upcoming:
-  - date: "TBD"
-    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28june%29_16384"
-  - date: "TBD"
-    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28july%29_16473"
-  - date: "TBD"
-    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28aug%29_16474"
+  - date: "June 12th"
+    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28june-2026%29_17272"
+  - date: "July 10th"
+    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28july-2026%29_17273"
+  - date: "Sept 4th"
+    entry_url: "https://www.britishtriathlon.org/events/guildford-lido-phoenix-tri-aquathlon-%28sept-2026%29_17274"
 
 # Race distances by category
 distances:
