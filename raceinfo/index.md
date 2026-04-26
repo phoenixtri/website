@@ -1,9 +1,9 @@
 ---
 layout: subpage
-title: "Aquathlon 2025: Race Information"
+title: "Aquathlon 2026: Race Information"
 ---
 
-# Aquathlon 2025: Race Information
+# Aquathlon 2026: Race Information
 
 **{{ site.data.raceinfo.venue }}**
 
