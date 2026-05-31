@@ -110,7 +110,7 @@ Children aged 8 to 14 in the Tristar categories race on the Tristar course. Chil
 
 ### The Run - 'Out and Back'
 
-<img src="{{ '/assets/images/Run_Routes_2026.png' | relative_url }}" alt="Run Route" class="info-image" />
+<img src="{{ '/assets/images/run_route.png' | relative_url }}" alt="Run Route" class="info-image" />
 
 The run routes are signposted with large, black arrows on a yellow background. Marshals are spaced regularly along the route.
 
