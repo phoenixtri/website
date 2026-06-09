@@ -104,8 +104,8 @@ Children aged 8 to 14 in the Tristar categories race on the Tristar course. Chil
 - Tristar swims occur in increasing order of distance (Tristar Start first, Tristar 3 last)
 - Competitors in each category will be started slowest first, with a suitable gap between competitors
 - Overtaking is permitted. Proceed with caution. Tap the foot of a competitor in front approaching the wall who will let you pass
-- Tumble turns are permitted but proceed with caution. This race is not the time for a first attempt
-
+- Tumble turns are NOT permitted
+  
 <img src="{{ '/assets/images/adult_swim.png' | relative_url }}" alt="Adult Swim Route" class="info-image" />
 
 ### The Run - 'Out and Back'
